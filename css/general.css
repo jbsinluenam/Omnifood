@@ -165,14 +165,13 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
-
+  background-color: #e67e22;
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
   padding: 1.6rem 3.2rem;
   text-decoration: none;
   border-radius: 9px;
-  /* transition: background-color 0.3s; */
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -203,15 +202,17 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.btn-form {
+.btn--form {
   background-color: #45260a;
   color: #fdf2e9;
   align-self: flex-end;
   padding: 1.2rem;
+  transition: all 0.3s;
 }
 
-.btn--from:hover {
+.btn--form:hover {
   background-color: #fff;
+  color: #45260a;
 }
 
 .link:link,
