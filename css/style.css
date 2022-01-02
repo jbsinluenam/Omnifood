@@ -21,7 +21,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -290,6 +290,7 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.8;
 }
 
 .list-icon {
@@ -352,6 +353,7 @@
 .gallery-items {
   overflow: hidden;
 }
+
 .gallery-items img {
   display: block;
   width: 100%;
