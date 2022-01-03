@@ -63,14 +63,13 @@
     font-size: 50%;
   }
 
-  .container {
-    padding: 0 6.4rem;
-  }
-
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
-    gap: 6.4;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero-text-box,
@@ -80,6 +79,14 @@
 
   .hero-img {
     width: 60%;
+  }
+
+  .container {
+    padding: 0 6.4rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 6.4rem;
   }
 
   .deliver-meals {
@@ -97,10 +104,6 @@
 
   .meal-content {
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
-  }
-
-  .testimonials-container {
-    padding: 9.6rem 6.4rem;
   }
 
   .section-testimonials {
@@ -185,11 +188,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .diets {
-    grid-column: 1/ -1;
-    justify-self: center;
-  }
-
   .pricing-plan {
     width: 100%;
     padding: 2.4rem;
@@ -197,6 +195,11 @@
 
   .grid--footer {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .diets {
+    justify-self: center;
+    grid-column: 1/-1;
   }
 
   .logo-col,
@@ -207,6 +210,83 @@
     grid-row: 1;
     grid-column: span 2;
     margin-bottom: 3.2rem;
+  }
+}
+
+/* *********************************** */
+/* BELOW 550px (Mobile phone) */
+/* *********************************** */
+
+@media (max-width: 36em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .container {
+    padding: 0 3.2rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
   }
 }
 
